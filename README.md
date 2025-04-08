@@ -51,6 +51,17 @@ Navigate to the client page in the Google Cloud Console menu or via the link bel
    uv sync
    ```
 
+#### Generate `token.json`
+
+1. Run the following command to generate the `token.json` file:
+
+   ```sh
+   uv run generate_token.py
+   ```
+
+2. A browser will open requesting permission to access your Google account. Grant the permission.
+3. After the authentication is completed, the `token.json` file will be created in your project directory.
+
 ### 5. Configure `calendar_settings.json`
 
 1. Edit the `calendar_settings.json.sample` file in the project directory.

@@ -51,6 +51,17 @@ Google Cloud コンソールのメニューまたは、下のリンクからク�
    uv sync
    ```
 
+#### `token.json`の生成
+
+1. 次のコマンドを実行して`token.json`ファイルを生成します：
+
+   ```sh
+   uv run generate_token.py
+   ```
+
+2. ブラウザが立ち上がり、Googleアカウントへのアクセス許可を求められます。許可を与えてください。
+3. 認証が完了すると、プロジェクトディレクトリに`token.json`ファイルが作成されます。
+
 ### 5. calendar_settings.jsonの設定
 
 1. プロジェクトディレクトリ内の`calendar_settings.json.sample`ファイルを編集します。
