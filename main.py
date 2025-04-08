@@ -19,7 +19,7 @@ SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"]
 
 # === 設定ファイル ===
 
-SETTINGS_FILE = "calendar_settings.json"
+SETTINGS_FILE = Path(__file__).resolve().parent / "calendar_settings.json"
 
 
 def load_calendar_ids(settings_file):
