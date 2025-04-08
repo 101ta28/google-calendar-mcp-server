@@ -1,0 +1,6 @@
+{
+  "calendar_ids": {
+    "primary": "primary",
+    "work": "work_calendar_id"
+  }
+}
