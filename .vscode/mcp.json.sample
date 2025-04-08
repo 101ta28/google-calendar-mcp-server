@@ -1,0 +1,11 @@
+{
+  "servers": {
+    "google-calendar-mcp-server": {
+      "type": "stdio",
+      "command": "/home/<username>/<dir>/.venv/bin/python",
+      "args": [
+        "/home/<username>/<dir>/main.py"
+      ]
+    }
+  }
+}
