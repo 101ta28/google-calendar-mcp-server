@@ -73,8 +73,8 @@ Set the necessary calendar IDs, then **rename** the file to `calendar_settings.j
 
 ### 6. Configure MCP
 
-1. Navigate to the `.vscode` directory within your project directory and edit the `mcp.json` file.
-2. Edit the `mcp.json` file as follows:
+1. Navigate to the `.vscode` directory within your project directory and edit the `mcp.json.sample` file.
+2. Edit the `mcp.json.sample` file as follows:
 
    ```json
    {
@@ -109,7 +109,7 @@ Set the necessary calendar IDs, then **rename** the file to `calendar_settings.j
    }
    ```
 
-3. Save the `mcp.json` file after editing.
+3. After editing, **rename** the file to `mcp.json` and save it.
 
 ### 7. Configure Agent Mode
 
