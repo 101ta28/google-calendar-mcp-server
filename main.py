@@ -182,7 +182,7 @@ def search_all_calendars(
     start_date: str = None,
     end_date: str = None,
     location: str = None,
-    summary: str = None,
+    title: str = None,
     description: str = None,
 ) -> str:
     """すべてのカレンダーからイベントを検索するツール"""
@@ -190,7 +190,7 @@ def search_all_calendars(
     try:
         service = build("calendar", "v3", credentials=creds)
         events = search_events(
-            service, start_date, end_date, location, summary, "all", description
+            service, start_date, end_date, location, title, "all", description
         )
         return json.dumps(events, ensure_ascii=False)
     except HttpError as error:
@@ -206,7 +206,7 @@ def search_calendar_events_by_type(
     start_date: str = None,
     end_date: str = None,
     location: str = None,
-    summary: str = None,
+    title: str = None,
     description: str = None,
 ) -> str:
     """特定のカレンダータイプからイベントを検索するツール"""
@@ -223,7 +223,7 @@ def search_calendar_events_by_type(
     try:
         service = build("calendar", "v3", credentials=creds)
         events = search_events(
-            service, start_date, end_date, location, summary, calendar_type, description
+            service, start_date, end_date, location, title, calendar_type, description
         )
         return json.dumps(events, ensure_ascii=False)
     except HttpError as error:
